@@ -21,27 +21,19 @@
     -->
   <script id="entry-template" type="text/x-handlebars-template">
    
-
-    <!-- <h1>{{title}}</h1>
-    <p>By  <a href="{{authorUrl}}">{{author}}</a> {{this.publishStatus}}</p>
-    <p>{{{body}}}</p>
-     -->
-    <article class="template" data-category="cat">
-      <header>
-        <h1>{{Title}}</h1>
-        <div>
-          By
-          <address>
-            <a href="{{authorUrl}}">{{author}}</a>
-          </address>
-          {{this.publishStatus}}
+    <article  data-category="{{category}}" data-author="{{author}}">
+        <header>
+          <h1>{{title}}</h1>
+          <div>
+            By: <address><a href="{{authorUrl}}">{{author}}</a> {{publishStatus}}</address>
           <time pubdate datetime="2000-01-01"></time>
-        </div>
+          </div>
         </header>
-        <p>{{{body}}}</p>
-        <!-- <section class="article-body"> -->
+        <section class="article-body">{{{body}}}</section>
+        <a href="#" class="read-on">Read on &rarr;</a>
+      </article>
+    
   
-    </article>
    
 
     </script>

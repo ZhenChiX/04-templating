@@ -14,11 +14,9 @@ function Article(rawDataObj) {
 
 Article.prototype.toHtml = function () {
 
+
   let source = $("#entry-template").html();
   let template = Handlebars.compile(source);
-
-  // let $newArticle = $('article.template').clone();
-  // $newArticle.attr('data-author', this.author);
 
   // TODO: Use Handlebars to render your articles. Get your template from the DOM and "compile" your template with Handlebars.
 
@@ -36,7 +34,6 @@ Article.prototype.toHtml = function () {
   // } else {
   //   this.publishStatus = '(draft)';
   // }
-  
   // TODO: Use the method that Handlebars gave you to return your filled-in html template for THIS article.
   return template(this);
 };
