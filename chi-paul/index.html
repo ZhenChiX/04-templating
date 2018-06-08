@@ -23,10 +23,10 @@
 
     <article  data-category="{{category}}" data-author="{{author}}">
       <header>
-        <h1>Title: {{title}}</h1>
+        <h1>{{title}}</h1>
         <div>
-          By: <address><a href="{{authorUrl}}">{{author}}</a>{{publishStatus}}</address>
-          published <time pubdate datetime="2000-01-01">Publish Time</time>
+          By: <address><a href="{{authorUrl}}">{{author}}</a> {{publishStatus}}</address>
+        <time pubdate datetime="2000-01-01"></time>
         </div>
       </header>
       <section class="article-body">{{{body}}}</section>
