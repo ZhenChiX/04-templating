@@ -20,18 +20,29 @@
         - If your object doesn't have values you need yet, you can add those properties in the model.
     -->
   <script id="entry-template" type="text/x-handlebars-template">
-    <h1>{{title}}</h1>
+   
+
+    <!-- <h1>{{title}}</h1>
     <p>By  <a href="{{authorUrl}}">{{author}}</a> {{this.publishStatus}}</p>
     <p>{{{body}}}</p>
-    
-
-    <!-- title:       'Bob Ross Ipsum',
-    category:    'art',
-    author:      'Bob Ross',
-    authorUrl:   'https://en.wikipedia.org/wiki/Bob_Ross',
-    publishedOn: 
-    body: -->
-
+     -->
+    <article class="template" data-category="cat">
+      <header>
+        <h1>{{Title}}</h1>
+        <div>
+          By
+          <address>
+            <a href="{{authorUrl}}">{{author}}</a>
+          </address>
+          {{this.publishStatus}}
+          <time pubdate datetime="2000-01-01"></time>
+        </div>
+        </header>
+        <p>{{{body}}}</p>
+        <!-- <section class="article-body"> -->
+  
+    </article>
+   
 
     </script>
 
